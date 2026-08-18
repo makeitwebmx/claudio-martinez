@@ -265,28 +265,42 @@ svg { display: block; }
 /* =========================================================
    RESPONSIVE
    ========================================================= */
+@media (max-width: 1180px) {
+  .topbar { gap: 14px; }
+  .logo-text small { display: none; }
+  .logo-text { white-space: nowrap; }
+  .menu { gap: 0; }
+  .menu a { padding: 8px 8px; font-size: 12.5px; }
+}
 @media (max-width: 1100px) {
+  .topbar-actions .btn-primary { display: none; }
   .layout { grid-template-columns: 260px 1fr; }
   .cards, .edu, .tools { grid-template-columns: 1fr; }
-  .hero-meta { grid-template-columns: repeat(3, 1fr); }
-  .hero-meta li:nth-child(3) { border-right: 0; }
-  .hero-meta li:nth-child(n+4) { border-top: 1px solid var(--line); }
-  .hero-meta li:nth-child(4) { padding-left: 0; }
+  .hero-meta li { padding-right: 10px; }
+  .hero-meta li + li { padding-left: 12px; }
 }
 
 @media (max-width: 900px) {
   .topbar { grid-template-columns: auto 1fr auto; }
-  .menu { position: fixed; top: 68px; left: 0; right: 0; flex-direction: column; gap: 2px; padding: 12px var(--gutter) 18px; background: var(--paper); border-bottom: 1px solid var(--line-strong); transform: translateY(-120%); transition: transform .3s; z-index: 40; }
+  .logo-text small { display: block; }
+  .menu { position: fixed; top: 68px; left: 0; right: 0; flex-direction: column; gap: 2px; padding: 12px var(--gutter) 18px; background: var(--paper); border-bottom: 1px solid var(--line-strong); transform: translateY(-120%); transition: transform .3s; z-index: 40; box-shadow: 0 12px 30px rgba(92,5,1,.12); }
   .menu.open { transform: none; }
   .menu a { padding: 12px 8px; font-size: 15px; }
-  .topbar-actions .btn-primary { display: none; }
   .burger { display: flex; }
 
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-figure { order: -1; height: clamp(300px, 80vw, 420px); }
+  .hero-figure { order: -1; height: clamp(300px, 80vw, 420px); width: 100%; max-width: 440px; margin: 0 auto; }
+  .hero-meta { grid-template-columns: 1fr 1fr; }
+  .hero-meta li { border-right: 0 !important; padding: 14px 0 14px 0 !important; border-top: 1px solid var(--line); }
+  .hero-meta li:nth-child(-n+2) { border-top: 0; }
+  .hero-meta li:nth-child(odd) { border-right: 1px solid var(--line) !important; padding-right: 14px !important; }
+  .hero-meta li:nth-child(even) { padding-left: 14px !important; }
+  .hero-meta li:last-child { grid-column: 1 / -1; border-right: 0 !important; padding-right: 0 !important; }
+
   .layout { grid-template-columns: 1fr; }
   .sidebar { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .side-cta { grid-column: 1 / -1; }
+  .cards, .tools, .edu { grid-template-columns: 1fr 1fr; }
   .tl-item { grid-template-columns: 1fr; gap: 8px; padding-left: 28px; }
   .tl-item::before { left: 0; transform: translateX(5px); top: 8px; }
   .tl-item::after { left: 0; transform: none; top: 6px; }
@@ -298,14 +312,19 @@ svg { display: block; }
 
 @media (max-width: 600px) {
   .sidebar { grid-template-columns: 1fr; }
-  .hero-meta { grid-template-columns: 1fr 1fr; }
-  .hero-meta li { border-right: 0 !important; padding-left: 0 !important; border-top: 1px solid var(--line); }
-  .hero-meta li:nth-child(-n+2) { border-top: 0; }
-  .hero-meta li:nth-child(odd) { border-right: 1px solid var(--line) !important; }
-  .hero-meta li:nth-child(even) { padding-left: 14px !important; }
+  .cards, .tools, .edu { grid-template-columns: 1fr; }
   .display { font-size: clamp(40px, 12.5vw, 60px); }
   .hero-cta .btn, .contact-actions .btn { width: 100%; justify-content: center; }
   .tl-top { flex-direction: column; }
+}
+
+@media (max-width: 400px) {
+  .topbar { gap: 8px; padding: 0 14px; }
+  .logo-text small { display: none; }
+  .logo-text { font-size: 14px; }
+  .btn-ghost { padding: 10px 8px; }
+  .hero-meta li { padding-top: 10px !important; padding-bottom: 10px !important; }
+  .meta-v { font-size: 13px; }
 }
 
 /* =========================================================
@@ -332,7 +351,8 @@ svg { display: block; }
   .hero-meta { margin-top: 10px; grid-template-columns: repeat(5, 1fr); }
   .hero-meta li { padding: 6px 8px 6px 0 !important; border-top: 0 !important; border-right: 1px solid var(--line) !important; }
   .hero-meta li + li { padding-left: 8px !important; }
-  .hero-meta li:last-child { border-right: 0 !important; }
+  .hero-meta li:last-child { border-right: 0 !important; grid-column: auto; }
+  .hero-figure { max-width: none; margin: 0; }
   .meta-k { font-size: 8.5px; }
   .meta-v { font-size: 10.5px; }
 
