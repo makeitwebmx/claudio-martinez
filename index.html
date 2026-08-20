@@ -3,342 +3,311 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Claudio Martínez Meza — CV · Creador multimedia</title>
+  <title>Claudio Martínez Meza — Creador multimedia · CV</title>
   <meta name="description" content="Currículum web de Claudio Martínez Meza: coordinador multimedia, camarógrafo, editor de video y creador de contenido en Mexicali, B.C.">
+  <meta property="og:title" content="Claudio Martínez Meza — Creador multimedia">
+  <meta property="og:description" content="Produzco, grabo, edito y animo contenido para marcas y medios. Mexicali, B.C.">
+  <meta property="og:image" content="assets/claudio-hero.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100..150,400..900&family=DM+Sans:opsz,wght@9..40,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!-- ================= TOPBAR ================= -->
 <header class="topbar" id="top">
-  <a href="#inicio" class="logo">
-    <span class="logo-box">CM</span>
-    <span class="logo-text">Claudio Meza<small>Creador multimedia</small></span>
-  </a>
-  <nav class="menu" id="menu" aria-label="Secciones">
-    <a href="#perfil" data-i="01">Perfil</a>
-    <a href="#experiencia" data-i="02">Experiencia</a>
-    <a href="#servicios" data-i="03">Servicios</a>
-    <a href="#software" data-i="04">Software</a>
-    <a href="#formacion" data-i="05">Formación</a>
-    <a href="#contacto" data-i="06">Contacto</a>
-  </nav>
-  <div class="topbar-actions">
-    <button class="btn btn-ghost" id="printBtn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
-      PDF
-    </button>
-    <a href="#contacto" class="btn btn-primary">Contáctame</a>
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <div class="wrap topbar-in">
+    <a href="#inicio" class="logo" aria-label="Inicio">C<span>.</span></a>
+    <nav class="menu" id="menu" aria-label="Secciones">
+      <a href="#trabajo">Trabajo</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="topbar-actions">
+      <a href="#contacto" class="btn btn-red">Hablemos
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
   </div>
 </header>
 
 <main>
 
-<!-- ================= HEADER / HERO ================= -->
+<!-- ================= HERO ================= -->
 <section class="hero" id="inicio">
-  <div class="hero-grid">
+  <div class="wrap hero-grid">
     <div class="hero-text">
-      <p class="kicker"><span class="dot"></span> Currículum · 2026</p>
       <h1 class="display">
-        <span>Claudio</span>
-        <span>Martínez</span>
-        <span class="accent">Meza</span>
+        <span class="line">Creador <i class="star" aria-hidden="true">*</i></span>
+        <span class="line">Multimedia</span>
       </h1>
-      <p class="hero-role">Coordinador multimedia · Camarógrafo · Editor de video · Creador de contenido</p>
-      <p class="hero-sum">Licenciado en Ciencias de la Comunicación (UABC). Produzco, grabo, edito y animo contenido para marcas y medios: desde la parrilla mensual hasta el corte final.</p>
-      <div class="hero-cta">
-        <a href="#experiencia" class="btn btn-primary">Ver experiencia</a>
-        <a href="https://wa.me/526531611383?text=Hola%20Claudio%2C%20vi%20tu%20CV%20web." target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
-      </div>
+      <p class="hero-sub">Grabo, edito y animo contenido<br><em>que la gente sí quiere ver.</em></p>
+      <p class="hero-p">Coordinador multimedia, camarógrafo, editor de video y creador de contenido. Licenciado en Ciencias de la Comunicación (UABC). De la parrilla mensual al corte final.</p>
+      <a href="#trabajo" class="link-arrow">
+        <span class="circ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        Ver mi trabajo
+      </a>
     </div>
 
     <figure class="hero-figure">
-      <div class="hero-shape"></div>
-      <img src="assets/claudio-hero.png" alt="Claudio Martínez Meza con cámara en mano">
-      <figcaption class="hero-caption">
-        <span class="cap-label">Base</span><span>Mexicali, B.C. · México</span>
-      </figcaption>
+      <div class="hero-red">
+        <span class="based">Base en<br>Mexicali, B.C.</span>
+        <span class="rule rule-a"></span><span class="rule rule-b"></span>
+      </div>
+      <img src="assets/claudio-hero.png" alt="Claudio Martínez Meza con cámara en mano" class="hero-img">
+      <div class="badge-round" aria-label="Disponible para freelance">
+        <svg viewBox="0 0 100 100" class="badge-ring" aria-hidden="true">
+          <defs><path id="ringPath" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs>
+          <text><textPath href="#ringPath">VIDEO · FOTO · MOTION · REDES · </textPath></text>
+        </svg>
+        <span class="badge-core">Disponible<br><b>para freelance</b></span>
+      </div>
     </figure>
   </div>
 
-  <ul class="hero-meta">
-    <li><span class="meta-k">Edad</span><span class="meta-v">23 años</span></li>
-    <li><span class="meta-k">Formación</span><span class="meta-v">Lic. Ciencias de la Comunicación</span></li>
-    <li><span class="meta-k">Experiencia</span><span class="meta-v" data-count="6" data-suffix=" años">6 años</span></li>
-    <li><span class="meta-k">Idiomas</span><span class="meta-v">Español · Inglés · Francés</span></li>
-    <li><span class="meta-k">Estado</span><span class="meta-v meta-live">Disponible</span></li>
-  </ul>
+  <div class="wrap">
+    <ul class="stats">
+      <li><b><span data-count="4">4</span>+</b><span>años de<br>experiencia</span></li>
+      <li><b><span data-count="10">10</span></b><span>marcas<br>atendidas</span></li>
+      <li><b><span data-count="3">3</span></b><span>marcas a la vez<br>coordinadas</span></li>
+      <li><b><span data-count="2">2</span></b><span>idiomas<br>de trabajo</span></li>
+    </ul>
+  </div>
 </section>
 
-<!-- ================= BODY: SIDEBAR + CONTENT ================= -->
-<div class="layout">
-
-  <!-- ---------- SIDEBAR ---------- -->
-  <aside class="sidebar">
-    <div class="side-block">
-      <h2 class="side-title">Contacto</h2>
-      <ul class="side-list">
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          <a href="mailto:claudio.meza.mar@gmail.com">claudio.meza.mar@gmail.com</a>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+526531611383">(653) 161 13 83</a>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Leonardo da Vinci 449, Gran Hacienda, 21354 Mexicali, B.C.</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="side-block">
-      <h2 class="side-title">Software</h2>
-      <ul class="skills">
-        <li data-level="95"><span class="sk-name"><b>Pr</b> Premiere Pro</span><span class="sk-bar"><i></i></span><span class="sk-val">95%</span></li>
-        <li data-level="90"><span class="sk-name"><b>Ae</b> After Effects</span><span class="sk-bar"><i></i></span><span class="sk-val">90%</span></li>
-        <li data-level="85"><span class="sk-name"><b>Ps</b> Photoshop</span><span class="sk-bar"><i></i></span><span class="sk-val">85%</span></li>
-        <li data-level="85"><span class="sk-name"><b>Dv</b> DaVinci Resolve</span><span class="sk-bar"><i></i></span><span class="sk-val">85%</span></li>
-      </ul>
-    </div>
-
-    <div class="side-block">
-      <h2 class="side-title">Idiomas</h2>
-      <ul class="langs">
-        <li data-level="100"><span>Español</span><span class="lg-dots" aria-label="10 de 10"></span><b>10/10</b></li>
-        <li data-level="80"><span>Inglés</span><span class="lg-dots" aria-label="8 de 10"></span><b>8/10</b></li>
-        <li data-level="50"><span>Francés</span><span class="lg-dots" aria-label="5 de 10"></span><b>5/10</b></li>
-      </ul>
-    </div>
-
-    <div class="side-block">
-      <h2 class="side-title">Marcas con las que he trabajado</h2>
-      <div class="side-logos">
-        <img src="assets/logo-valori.png" alt="Valori+">
-        <img src="assets/logo-ivert.png" alt="I-Vert Energy">
-        <img src="assets/logo-citsolar.png" alt="CITSolar">
-        <img src="assets/logo-canal66.png" alt="Canal 66">
+<!-- ================= TRABAJO (PRINCIPALES) ================= -->
+<section class="sec" id="trabajo">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 class="h2">Mi trabajo</h2>
+      <div class="sec-tools">
+        <a href="#portafolio" class="link-sm">Ver todo el portafolio
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+        <div class="car-nav">
+          <button type="button" class="car-btn" id="featPrev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+          <button type="button" class="car-btn" id="featNext" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
       </div>
+    </header>
+    <div class="featured" id="featured" tabindex="0" aria-label="Carrusel de trabajos principales"></div>
+  </div>
+</section>
+
+<!-- ================= PORTAFOLIO COMPLETO ================= -->
+<section class="sec sec-port" id="portafolio">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 class="h2">Portafolio</h2>
+      <span class="kicker"><span id="portCount">0</span> piezas · clic para reproducir</span>
+    </header>
+    <div class="filters" id="filters" role="tablist" aria-label="Filtrar por categoría"></div>
+    <div class="port-grid" id="portGrid"></div>
+    <div class="port-more"><button class="btn btn-outline" id="moreBtn">Ver más piezas
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button></div>
+  </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section class="sec sec-services" id="servicios">
+  <div class="wrap services">
+    <div class="services-block">
+      <h2 class="h2 h2-light">Servicios</h2>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="services-arrow" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
     </div>
+    <ul class="services-grid">
+      <li>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></span>
+        <div><h3>Producción de video</h3><p>Grabación en estudio, locación y enlaces en vivo. Cámara, encuadre y luz al servicio del mensaje.</p></div>
+      </li>
+      <li>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14.5 4-5 16"/><path d="M17.5 8l4 4-4 4"/><path d="M6.5 8l-4 4 4 4"/></svg></span>
+        <div><h3>Edición y postproducción</h3><p>Corte, ritmo, color y sonido en Premiere Pro y DaVinci Resolve. Piezas para TV, redes y uso comercial.</p></div>
+      </li>
+      <li>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3"/><path d="M18.4 5.6l-2.1 2.1"/><path d="M21 12h-3"/><path d="M18.4 18.4l-2.1-2.1"/><path d="M12 21v-3"/><path d="M5.6 18.4l2.1-2.1"/><path d="M3 12h3"/><path d="M5.6 5.6l2.1 2.1"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <div><h3>Motion graphics</h3><p>Animación en After Effects: títulos, transiciones y gráficos de marca para reels, posts y comerciales.</p></div>
+      </li>
+      <li>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg></span>
+        <div><h3>Contenido para redes</h3><p>Parrillas mensuales, grabación, segmentación y fotografía comercial. Coordino al equipo de principio a fin.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <a href="#contacto" class="side-cta">
-      <span>¿Trabajamos juntos?</span>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-    </a>
-  </aside>
+<!-- ================= SOBRE MÍ ================= -->
+<section class="sec" id="sobre-mi">
+  <div class="wrap about">
+    <div class="about-text">
+      <p class="kicker">Sobre mí</p>
+      <h2 class="h2 h2-sm">Contar historias con cámara, ritmo y criterio.</h2>
+      <p>Tengo 23 años, mente abierta y cero prejuicios. Me resulta fácil <strong>organizar un equipo</strong> para sacar trabajo de calidad: he coordinado la producción publicitaria de tres marcas al mismo tiempo, grabado enlaces en vivo, redactado notas para un noticiero y animado piezas para reels, posts y comerciales.</p>
+    </div>
+    <figure class="about-figure">
+      <span class="about-red"></span>
+      <img src="assets/claudio-side.png" alt="Claudio Martínez Meza de perfil revisando la cámara">
+    </figure>
+    <div class="about-skills">
+      <ul class="skills">
+        <li data-level="95"><span class="sk-row"><span>Premiere Pro</span><b>95%</b></span><span class="sk-bar"><i></i></span></li>
+        <li data-level="90"><span class="sk-row"><span>After Effects</span><b>90%</b></span><span class="sk-bar"><i></i></span></li>
+        <li data-level="85"><span class="sk-row"><span>Photoshop</span><b>85%</b></span><span class="sk-bar"><i></i></span></li>
+        <li data-level="85"><span class="sk-row"><span>DaVinci Resolve</span><b>85%</b></span><span class="sk-bar"><i></i></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <!-- ---------- CONTENT ---------- -->
-  <div class="content">
+<!-- ================= EXPERIENCIA ================= -->
+<section class="sec sec-exp" id="experiencia">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 class="h2">Experiencia</h2>
+      <span class="kicker">2019 — hoy</span>
+    </header>
 
-    <!-- 01 PERFIL -->
-    <section class="sec" id="perfil">
-      <header class="sec-head">
-        <span class="sec-num">01</span>
-        <h2 class="sec-title">Perfil</h2>
-      </header>
-      <div class="sec-body">
-        <p class="lead">Soy una persona de 23 años sin prejuicios y de mente muy abierta. Me resulta fácil trabajar y <strong>organizar un equipo</strong> para elaborar un trabajo de calidad.</p>
-        <p>He coordinado la producción publicitaria de tres marcas al mismo tiempo, grabado enlaces en vivo y redactado notas para un noticiero, y animado piezas en After Effects para reels, posts y comerciales. Me muevo con la misma soltura detrás de la cámara que en la sala de edición.</p>
-        <ul class="tags">
-          <li>Producción de video</li><li>Edición</li><li>Motion graphics</li><li>Fotografía</li><li>Redacción</li><li>Parrillas de contenido</li><li>Coordinación de equipos</li><li>Enlaces en vivo</li>
+    <ol class="exp">
+      <li class="exp-item">
+        <div class="exp-when"><b>2025</b><span>Feb — actualidad</span><em class="tag-now">Actual</em></div>
+        <div class="exp-body">
+          <h3>Coordinador multimedia / Creador de contenido</h3>
+          <p class="exp-org">Valori+ · I-Vert Energy · CITSolar</p>
+          <ul>
+            <li>Coordinación de equipos para producción de contenido publicitario.</li>
+            <li>Grabación, edición y segmentación de contenido para redes sociales.</li>
+            <li>Elaboración de parrillas de contenido mensuales.</li>
+            <li>Animaciones en After Effects para reels, posts y comerciales.</li>
+          </ul>
+        </div>
+        <div class="exp-logos"><img src="assets/logo-valori.png" alt="Valori+"><img src="assets/logo-ivert.png" alt="I-Vert Energy"><img src="assets/logo-citsolar.png" alt="CITSolar"></div>
+      </li>
+      <li class="exp-item">
+        <div class="exp-when"><b>2024</b><span>Mar — Dic</span></div>
+        <div class="exp-body">
+          <h3>Camarógrafo / Editor y redactor de notas informativas</h3>
+          <p class="exp-org">Canal 66 · Mexicali</p>
+          <ul>
+            <li>Camarógrafo en enlaces en vivo y creación de imágenes (stock) para el noticiero.</li>
+            <li>Redacción y edición de notas periodísticas para el noticiero del mediodía.</li>
+          </ul>
+        </div>
+        <div class="exp-logos"><img src="assets/logo-canal66.png" alt="Canal 66"></div>
+      </li>
+      <li class="exp-item">
+        <div class="exp-when"><b>2019</b><span>Ago — freelance</span></div>
+        <div class="exp-body">
+          <h3>Modelo / Asesor de vestuario e imagen</h3>
+          <p class="exp-org">Liverpool · Plaza Outlet Mexicali · Calexico</p>
+          <ul>
+            <li>Modelaje y elaboración de outfits para marcas de ropa.</li>
+            <li>Edición de video y fotografía para uso comercial.</li>
+          </ul>
+        </div>
+        <div class="exp-logos"></div>
+      </li>
+    </ol>
+
+    <div class="facts">
+      <div class="fact">
+        <p class="kicker">Formación</p>
+        <h3>Lic. en Ciencias de la Comunicación</h3>
+        <p>UABC · Mexicali · 2021 — 2024</p>
+        <h3>Certificación DaVinci Resolve</h3>
+        <p>Blackmagic Design · 2025</p>
+      </div>
+      <div class="fact">
+        <p class="kicker">Idiomas</p>
+        <ul class="langs">
+          <li data-level="10"><span>Español</span><span class="dots" aria-label="10 de 10"></span><b>10/10</b></li>
+          <li data-level="8"><span>Inglés</span><span class="dots" aria-label="8 de 10"></span><b>8/10</b></li>
+          <li data-level="5"><span>Francés</span><span class="dots" aria-label="5 de 10"></span><b>5/10</b></li>
         </ul>
       </div>
-    </section>
-
-    <!-- 02 EXPERIENCIA -->
-    <section class="sec" id="experiencia">
-      <header class="sec-head">
-        <span class="sec-num">02</span>
-        <h2 class="sec-title">Experiencia</h2>
-      </header>
-      <ol class="timeline">
-        <li class="tl-item is-current">
-          <div class="tl-when">
-            <span class="tl-date">Feb 2025</span>
-            <span class="tl-to">Actualidad</span>
-          </div>
-          <div class="tl-card">
-            <div class="tl-top">
-              <div>
-                <h3>Coordinador multimedia / Creador de contenido</h3>
-                <p class="tl-org">Valori+ · I-Vert Energy · CITSolar</p>
-              </div>
-              <span class="badge badge-live">Actual</span>
-            </div>
-            <ul class="tl-list">
-              <li>Coordinación de equipos para producción de contenido publicitario.</li>
-              <li>Grabación, edición y segmentación de contenido para redes sociales.</li>
-              <li>Elaboración de parrillas de contenido mensuales.</li>
-              <li>Creación de animaciones en After Effects para reels, posts y comerciales.</li>
-            </ul>
-            <div class="tl-logos">
-              <img src="assets/logo-valori.png" alt="Valori+"><img src="assets/logo-ivert.png" alt="I-Vert Energy"><img src="assets/logo-citsolar.png" alt="CITSolar">
-            </div>
-          </div>
-        </li>
-
-        <li class="tl-item">
-          <div class="tl-when">
-            <span class="tl-date">Mar 2024</span>
-            <span class="tl-to">Dic 2024</span>
-          </div>
-          <div class="tl-card">
-            <div class="tl-top">
-              <div>
-                <h3>Camarógrafo / Editor y redactor de notas informativas</h3>
-                <p class="tl-org">Canal 66 · Mexicali</p>
-              </div>
-              <span class="badge">TV</span>
-            </div>
-            <ul class="tl-list">
-              <li>Camarógrafo en enlaces en vivo y creación de imágenes (stock) para el noticiero.</li>
-              <li>Redacción de notas periodísticas para el noticiero del mediodía.</li>
-              <li>Edición de notas periodísticas.</li>
-            </ul>
-            <div class="tl-logos"><img src="assets/logo-canal66.png" alt="Canal 66"></div>
-          </div>
-        </li>
-
-        <li class="tl-item">
-          <div class="tl-when">
-            <span class="tl-date">Ago 2019</span>
-            <span class="tl-to">Freelance</span>
-          </div>
-          <div class="tl-card">
-            <div class="tl-top">
-              <div>
-                <h3>Modelo / Asesor de vestuario e imagen</h3>
-                <p class="tl-org">Liverpool · Plaza Outlet Mexicali · Calexico</p>
-              </div>
-              <span class="badge">Freelance</span>
-            </div>
-            <ul class="tl-list">
-              <li>Modelaje y elaboración de outfits para marcas de ropa.</li>
-              <li>Edición de video y fotografía para uso comercial.</li>
-            </ul>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <!-- 03 SERVICIOS -->
-    <section class="sec" id="servicios">
-      <header class="sec-head">
-        <span class="sec-num">03</span>
-        <h2 class="sec-title">Servicios</h2>
-      </header>
-      <div class="cards">
-        <article class="card">
-          <span class="card-i">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
-          </span>
-          <h3>Producción de video</h3>
-          <p>Grabación en estudio, locación y enlaces en vivo. Cámara, encuadre y luz al servicio del mensaje.</p>
-        </article>
-        <article class="card">
-          <span class="card-i">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h6l2 3h10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M8 3h8"/><path d="M12 13v5"/><path d="m9.5 15.5 2.5 2.5 2.5-2.5"/></svg>
-          </span>
-          <h3>Edición y postproducción</h3>
-          <p>Corte, ritmo, color y sonido en Premiere Pro y DaVinci Resolve. Piezas para TV, redes y uso comercial.</p>
-        </article>
-        <article class="card">
-          <span class="card-i">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3"/><path d="M18.4 5.6l-2.1 2.1"/><path d="M21 12h-3"/><path d="M18.4 18.4l-2.1-2.1"/><path d="M12 21v-3"/><path d="M5.6 18.4l2.1-2.1"/><path d="M3 12h3"/><path d="M5.6 5.6l2.1 2.1"/><circle cx="12" cy="12" r="3"/></svg>
-          </span>
-          <h3>Motion graphics</h3>
-          <p>Animaciones en After Effects: títulos, transiciones y gráficos de marca para reels, posts y comerciales.</p>
-        </article>
-        <article class="card">
-          <span class="card-i">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
-          </span>
-          <h3>Contenido para redes</h3>
-          <p>Parrillas mensuales, grabación, segmentación y fotografía comercial. Coordino al equipo de principio a fin.</p>
-        </article>
+      <div class="fact">
+        <p class="kicker">Datos</p>
+        <ul class="data">
+          <li><span>Edad</span><b>23 años</b></li>
+          <li><span>Base</span><b>Mexicali, B.C.</b></li>
+          <li><span>Modalidad</span><b>Presencial · Remoto · Freelance</b></li>
+          <li><span>Estado</span><b class="live">Disponible</b></li>
+        </ul>
       </div>
-    </section>
-
-    <!-- 04 SOFTWARE -->
-    <section class="sec" id="software">
-      <header class="sec-head">
-        <span class="sec-num">04</span>
-        <h2 class="sec-title">Software</h2>
-      </header>
-      <div class="tools">
-        <div class="tool"><span class="tool-tag">Pr</span><div><h3>Premiere Pro</h3><p>Edición de video, notas informativas, reels y comerciales.</p></div></div>
-        <div class="tool"><span class="tool-tag">Ae</span><div><h3>After Effects</h3><p>Motion graphics, animación de textos y gráficos de marca.</p></div></div>
-        <div class="tool"><span class="tool-tag">Ps</span><div><h3>Photoshop</h3><p>Retoque fotográfico y piezas gráficas para redes.</p></div></div>
-        <div class="tool"><span class="tool-tag tool-tag-alt">Dv</span><div><h3>DaVinci Resolve</h3><p>Corrección de color y edición. Certificado por Blackmagic Design.</p></div></div>
-      </div>
-    </section>
-
-    <!-- 05 FORMACIÓN -->
-    <section class="sec" id="formacion">
-      <header class="sec-head">
-        <span class="sec-num">05</span>
-        <h2 class="sec-title">Formación</h2>
-      </header>
-      <div class="edu">
-        <article class="edu-item">
-          <span class="edu-year">2021<br>—<br>2024</span>
-          <div>
-            <p class="edu-k">Licenciatura</p>
-            <h3>Ciencias de la Comunicación</h3>
-            <p class="edu-org">UABC · Universidad Autónoma de Baja California · Mexicali</p>
-          </div>
-        </article>
-        <article class="edu-item">
-          <span class="edu-year">2025<br>—<br>Hoy</span>
-          <div>
-            <p class="edu-k">Certificación</p>
-            <h3>DaVinci Resolve</h3>
-            <p class="edu-org">Blackmagic Design</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- 06 CONTACTO -->
-    <section class="sec sec-contact" id="contacto">
-      <header class="sec-head">
-        <span class="sec-num">06</span>
-        <h2 class="sec-title">Contacto</h2>
-      </header>
-      <div class="contact-box">
-        <div>
-          <h3 class="contact-h">¿Tienes un proyecto en mente?</h3>
-          <p>Escríbeme y platicamos cómo producir contenido que valga la pena ver.</p>
-        </div>
-        <div class="contact-actions">
-          <a href="https://wa.me/526531611383?text=Hola%20Claudio%2C%20vi%20tu%20CV%20web%20y%20me%20gustar%C3%ADa%20platicar." target="_blank" rel="noopener" class="btn btn-light">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
-            WhatsApp
-          </a>
-          <a href="mailto:claudio.meza.mar@gmail.com" class="btn btn-outline-light">Enviar correo</a>
-          <button class="btn btn-outline-light" data-copy="claudio.meza.mar@gmail.com">Copiar correo</button>
-        </div>
-      </div>
-    </section>
-
+    </div>
   </div>
-</div>
+</section>
+
+<!-- ================= MARCAS ================= -->
+<section class="trusted">
+  <div class="wrap trusted-in">
+    <div class="trusted-logos">
+      <img src="assets/logo-valori.png" alt="Valori+">
+      <img src="assets/logo-ivert.png" alt="I-Vert Energy">
+      <img src="assets/logo-citsolar.png" alt="CITSolar">
+      <img src="assets/logo-canal66.png" alt="Canal 66">
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section class="cta" id="contacto">
+  <div class="wrap cta-grid">
+    <div class="cta-main">
+      <h2 class="h2 h2-light">Creemos algo<br>grande juntos.</h2>
+      <a href="https://wa.me/526531611383?text=Hola%20Claudio%2C%20vi%20tu%20CV%20web%20y%20me%20gustar%C3%ADa%20platicar." target="_blank" rel="noopener" class="cta-circ" aria-label="Escribir por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+      </a>
+    </div>
+    <div class="cta-col">
+      <p class="cta-k">Contacto</p>
+      <a href="mailto:claudio.meza.mar@gmail.com">claudio.meza.mar@gmail.com</a>
+      <a href="tel:+526531611383">+52 (653) 161 13 83</a>
+    </div>
+    <div class="cta-col">
+      <p class="cta-k">Enlaces</p>
+      <a href="https://wa.me/526531611383?text=Hola%20Claudio%2C%20vi%20tu%20CV%20web." target="_blank" rel="noopener">WhatsApp</a>
+      <button type="button" class="linkbtn" data-copy="claudio.meza.mar@gmail.com">Copiar correo</button>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer class="footer">
-  <span class="footer-name">Claudio Martínez Meza</span>
-  <span>© <span id="year"></span> · Mexicali, B.C.</span>
-  <a href="#top" class="footer-top">Volver arriba
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
-  </a>
+  <div class="wrap footer-in">
+    <span>© <span id="year"></span> Claudio Martínez Meza</span>
+    <span>Mexicali, B.C. · Todos los derechos reservados</span>
+  </div>
 </footer>
 
+<!-- ================= LIGHTBOX ================= -->
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Reproductor de video">
+  <button class="lb-close" id="lbClose" aria-label="Cerrar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Anterior">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+  </button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Siguiente">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+  </button>
+  <div class="lb-box" id="lbBox">
+    <div class="lb-frame" id="lbFrame"></div>
+    <div class="lb-meta">
+      <span class="lb-brand" id="lbBrand"></span>
+      <h3 class="lb-title" id="lbTitle"></h3>
+      <span class="lb-sub" id="lbSub"></span>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast" role="status" aria-live="polite">Correo copiado</div>
+<script src="portafolio.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

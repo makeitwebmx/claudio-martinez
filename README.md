@@ -1,16 +1,10 @@
-# CV web v2 — Claudio Martínez Meza (estructura editorial)
+# CV web v3 — Claudio Martínez Meza (editorial negro / rojo / blanco)
 
-HTML + CSS + JS puro. Sin frameworks.
+HTML + CSS + JS puro, sin frameworks. Calcado a la referencia "WEB DESIGNER" (Mariana Design).
 
-- `index.html` — cabecera con nombre y foto, franja de datos, barra lateral fija (contacto, software, idiomas, marcas) y columna con secciones numeradas 01–06 (perfil, experiencia en línea de tiempo, servicios, software, formación, contacto).
-- `styles.css` — paleta Bistre / Goldfinch / Butter / Indian Red / Garnet; responsive; versión de impresión en 2 páginas (botón PDF).
-- `script.js` — menú móvil, reveal, barras y puntos de nivel, enlace activo, copiar correo, PDF.
-
-## Tipografía Integral CF
-Integral CF es una fuente comercial (no está en Google Fonts). La web ya está preparada:
-1. Copia los archivos a `assets/fonts/` con estos nombres:
-   `IntegralCF-Bold.woff2` (o `.woff` / `.otf`) y opcionalmente `IntegralCF-Heavy.woff2` / `.otf`.
-2. Listo: el CSS la toma automáticamente (también la usa si está instalada en el sistema).
-Mientras no esté, usa **Anybody** (Google Fonts) en ancho extendido y peso 900, la alternativa libre más parecida.
+- `index.html` — topbar, hero con asterisco rojo + foto sobre panel rojo + sello giratorio "Disponible para freelance", franja negra de cifras, Trabajo seleccionado (3 mosaicos), Servicios (bloque rojo + rejilla 2x2), Sobre mí (texto · foto · barras de software + Descargar CV), Experiencia (línea por año + Formación/Idiomas/Datos), Confían en mí (logos), CTA roja de contacto, pie.
+- `styles.css` — variables al inicio (`--red`, `--ink`, tipografías). Display: Anton (Google Fonts). Texto: Inter. Responsive (390 / 1440 verificados) + hoja de impresión A4 de 2 páginas.
+- `script.js` — menú móvil, reveal al hacer scroll, contadores, barras y puntos de nivel, enlace activo, copiar correo. `?nofx` en la URL desactiva animaciones (capturas / PDF).
+- `CV-Claudio-Martinez-Meza.pdf` — generado desde la hoja de impresión (Chrome/Playwright, A4, 2 páginas). Regenerar tras editar textos: abrir `index.html?nofx`, Ctrl+P, guardar como PDF con fondos.
 
 Textos: `index.html`. Colores y tipografías: variables al inicio de `styles.css`.

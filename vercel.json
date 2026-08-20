@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/video/:id", "destination": "/api/video?id=:id" }
+  ]
+}
