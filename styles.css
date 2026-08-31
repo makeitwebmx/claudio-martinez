@@ -137,7 +137,7 @@ strong{font-weight:700}
 }
 .hero-sub{
   font-size:clamp(18px,1.9vw,24px);font-weight:700;text-transform:uppercase;line-height:1.2;
-  letter-spacing:-.005em;margin-bottom:18px;
+  letter-spacing:-.005em;margin-bottom:28px;
 }
 .hero-sub em{font-style:normal;color:var(--red)}
 .hero-p{max-width:380px;color:var(--mute);font-size:14px;line-height:1.6;margin-bottom:28px}
@@ -555,7 +555,7 @@ html.nofx .skills li .sk-bar i{transition:none}
   .display{font-size:50pt;margin-bottom:5mm}
   .hero-sub{font-size:13pt;margin-bottom:4mm}
   .hero-p{margin-bottom:0;font-size:10pt;max-width:none}
-  .hero-figure{min-height:0;height:56mm}
+  .hero-figure{min-height:0;height:78mm}
   .hero-red{width:36%;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .hero-img{filter:none}
   .stats{display:grid !important;grid-template-columns:repeat(4,1fr) !important;padding:3mm 0;margin-top:4mm;-webkit-print-color-adjust:exact;print-color-adjust:exact}
